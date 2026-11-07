@@ -1,0 +1,171 @@
+{
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "status 200": {
+                    "path": "::status 200",
+                    "id": "fad9fa412b86fcb03bee97c80dcd61f1",
+                    "passes": 12857,
+                    "fails": 0,
+                    "name": "status 200"
+                },
+                "resposta contém lista de livros": {
+                    "fails": 0,
+                    "name": "resposta contém lista de livros",
+                    "path": "::resposta contém lista de livros",
+                    "id": "7337ec8d22860dbc718dc64fe1776d1b",
+                    "passes": 12857
+                },
+                "lista contém de 1 a 20 livros": {
+                    "name": "lista contém de 1 a 20 livros",
+                    "path": "::lista contém de 1 a 20 livros",
+                    "id": "a34caad3f374ad0a7482c8573db87755",
+                    "passes": 12857,
+                    "fails": 0
+                },
+                "livros da categoria Fantasia": {
+                    "id": "96b275a81ef929648403f68630a896be",
+                    "passes": 12857,
+                    "fails": 0,
+                    "name": "livros da categoria Fantasia",
+                    "path": "::livros da categoria Fantasia"
+                },
+                "livros disponíveis": {
+                    "name": "livros disponíveis",
+                    "path": "::livros disponíveis",
+                    "id": "22907f09d1ea753a030e4cf8b7c82d98",
+                    "passes": 12857,
+                    "fails": 0
+                },
+                "títulos em ordem crescente": {
+                    "passes": 12857,
+                    "fails": 0,
+                    "name": "títulos em ordem crescente",
+                    "path": "::títulos em ordem crescente",
+                    "id": "df8c0965784327d1df4f31ee41a2835c"
+                }
+            }
+    },
+    "metrics": {
+        "http_reqs": {
+            "count": 12857,
+            "rate": 116.4669143286336
+        },
+        "http_req_duration{expected_response:true}": {
+            "med": 1.9637,
+            "max": 77.5441,
+            "p(90)": 3.8211,
+            "p(95)": 4.775,
+            "avg": 2.459843696041061,
+            "min": 0
+        },
+        "iterations": {
+            "count": 12857,
+            "rate": 116.4669143286336
+        },
+        "data_sent": {
+            "count": 1979978,
+            "rate": 17935.904806609575
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_receiving": {
+            "avg": 0.16931548572761893,
+            "min": 0,
+            "med": 0,
+            "max": 32.9999,
+            "p(90)": 0.7117199999999999,
+            "p(95)": 0.8707199999999999
+        },
+        "data_received": {
+            "rate": 377119.8685961156,
+            "count": 41630966
+        },
+        "http_req_blocked": {
+            "p(95)": 0,
+            "avg": 0.017208252313914603,
+            "min": 0,
+            "med": 0,
+            "max": 20.0739,
+            "p(90)": 0
+        },
+        "http_req_sending": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.003823263591817686,
+            "min": 0,
+            "med": 0,
+            "max": 1.5281
+        },
+        "checks": {
+            "passes": 77142,
+            "fails": 0,
+            "thresholds": {
+                "rate>=0.99": false
+            },
+            "value": 1
+        },
+        "vus": {
+            "value": 1,
+            "min": 0,
+            "max": 400
+        },
+        "http_req_duration": {
+            "med": 1.9637,
+            "max": 77.5441,
+            "p(90)": 3.8211,
+            "p(95)": 4.775,
+            "avg": 2.459843696041061,
+            "min": 0,
+            "thresholds": {
+                "p(95)<1000": false
+            }
+        },
+        "vus_max": {
+            "value": 400,
+            "min": 400,
+            "max": 400
+        },
+        "http_req_connecting": {
+            "max": 19.7163,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.01576798631095901,
+            "min": 0,
+            "med": 0
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 12857,
+            "thresholds": {
+                "rate<0.01": false
+            },
+            "value": 0
+        },
+        "iteration_duration": {
+            "max": 1081.0468,
+            "p(90)": 1004.6154,
+            "p(95)": 1006.074,
+            "avg": 1003.2295367815179,
+            "min": 1000.5542,
+            "med": 1002.5173
+        },
+        "http_req_waiting": {
+            "med": 1.8059,
+            "max": 56.1414,
+            "p(90)": 3.7167999999999997,
+            "p(95)": 4.7096,
+            "avg": 2.286704946721633,
+            "min": 0
+        }
+    }
+}

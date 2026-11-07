@@ -1,0 +1,42 @@
+
+
+  █ THRESHOLDS
+
+    checks
+    ✓ 'rate>=0.99' rate=100.00%
+
+    http_req_duration
+    ✓ 'p(95)<1000' p(95)=4.77ms
+
+    http_req_failed
+    ✓ 'rate<0.01' rate=0.00%
+
+
+  █ TOTAL RESULTS
+
+    checks_total.......: 77142   698.801486/s
+    checks_succeeded...: 100.00% 77142 out of 77142
+    checks_failed......: 0.00%   0 out of 77142
+
+    ✓ status 200
+    ✓ resposta contém lista de livros
+    ✓ lista contém de 1 a 20 livros
+    ✓ livros da categoria Fantasia
+    ✓ livros disponíveis
+    ✓ títulos em ordem crescente
+
+    HTTP
+    http_req_duration..............: avg=2.45ms min=0s med=1.96ms max=77.54ms p(90)=3.82ms p(95)=4.77ms
+      { expected_response:true }...: avg=2.45ms min=0s med=1.96ms max=77.54ms p(90)=3.82ms p(95)=4.77ms
+    http_req_failed................: 0.00%  0 out of 12857
+    http_reqs......................: 12857  116.466914/s
+
+    EXECUTION
+    iteration_duration.............: avg=1s     min=1s med=1s     max=1.08s   p(90)=1s     p(95)=1s
+    iterations.....................: 12857  116.466914/s
+    vus............................: 1      min=0          max=400
+    vus_max........................: 400    min=400        max=400
+
+    NETWORK
+    data_received..................: 42 MB  377 kB/s
+    data_sent......................: 2.0 MB 18 kB/s
